@@ -29,3 +29,9 @@ jobs:
         run: |
           sudo apt-get install -y tree
           tree .
+      - name: build
+        run: |
+          sudo apt-get install -y python3 python3-pip
+          pip install --upgrade build
+          python -m build
+          tree .
