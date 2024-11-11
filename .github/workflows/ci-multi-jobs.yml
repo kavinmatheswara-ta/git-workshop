@@ -37,7 +37,7 @@ jobs:
 
       - name: Artifacts
         run: |
-          rm dist/pack-0.0.0.tar.gz
+          rm dist/my_package-0.0.0.tar.gz
           mv script.py dist/script.py
           tree .
 
