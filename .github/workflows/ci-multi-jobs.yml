@@ -47,11 +47,11 @@ jobs:
           name: my-artifact
           path: dist/
       - run: tree .
-      
+
   deploy:
     name: Deploy phase
     runs-on: "ubuntu-latest"
-    needs: dev
+    needs: with-checkout-job
     steps:
     - uses: actions/download-artifact@v4
       with:
