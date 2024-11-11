@@ -60,5 +60,5 @@ jobs:
       run: ls -R
     - name: run
       run: |
-        pip install pack-0.0.0-py3-none-any.whl
+        pip install my_package-0.0.0-py3-none-any.whl
         python script.py
